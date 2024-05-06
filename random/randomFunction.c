@@ -39,7 +39,7 @@ int main(void) {
 
     printf("1 ~ 45까지 임의의 숫자 6개를 출력합니다. \n");
         // void srand(int) {}, 시간은 계속 흐르기 때문에 특정 시점을 잡아 난수 생성
-    // srand(unsigned)time(NULL);
+    srand((unsigned)time(NULL));
     for (cnt = 1; cnt <= 6; cnt++) {
         printf(" %d, 1 + (rand() % NUM)");
     }
